@@ -35,11 +35,11 @@ odpowiednie pliki systemowe w stopniu w jakim jest to konieczne.
 
 %build
 ./configure --prefix=%{_prefix}
-make RPM_OPT_FLAGS="$RPM_OPT_FLAGS"
+%{__make} RPM_OPT_FLAGS="$RPM_OPT_FLAGS"
 
 %install
 rm -rf $RPM_BUILD_ROOT
-make prefix=$RPM_BUILD_ROOT%{_prefix} install
+%{__make} prefix=$RPM_BUILD_ROOT%{_prefix} install
 
 %clean
 rm -rf $RPM_BUILD_ROOT
