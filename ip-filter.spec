@@ -67,9 +67,12 @@ rm -rf $RPM_BUILD_ROOT
 #end of optional package
 
 * %{date} PLD Team <pld-list@pld.org.pl>
-All below listed persons can be reached on <cvs_login>@pld.org.pl
+All persons listed below can be reached at <cvs_login>@pld.org.pl
 
 $Log: ip-filter.spec,v $
-Revision 1.1  2000-03-16 08:32:27  cieciwa
+Revision 1.2  2000-03-28 16:54:34  baggins
+- translated kloczkish into english
+
+Revision 1.1  2000/03/16 08:32:27  cieciwa
 - version 3.3.12,
 - build rpm.
