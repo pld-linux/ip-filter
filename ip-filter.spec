@@ -4,15 +4,14 @@ Name:		ip-filter
 Version:	3.3.12
 Release:	1
 License:	GPL
-Group:		Utilities/System
-Group(pl):	Narzêdzia/System
+Group:		Applications/System
+Group(de):	Applikationen/System
+Group(pl):	Aplikacje/System
 Source0:	ftp://coombs.anu.edu.au/pub/net/ip-filter/ip-fil%{version}.tar.gz
 #Patch0:	
 #BuildRequires:	
 #Requires:	
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
-%define	_prefix	/usr
 
 %description
 IP Filter is a TCP/IP packet filter, suitable for use in a firewall
@@ -22,11 +21,12 @@ where possible is highly recommended. Scripts are provided to install
 and patch system files, as required.
 
 %description -l pl
-IP Filter to filtr pakietów TCP/IP, przeznaczony do u¿ycia w ¶rodowiskach
-typu firewall. By móc go u¿ywaæ musi istnieæ wsparcie przez odpowiedni
-modu³ ³adowalny lub w³±czone w j±dro; u¿ycie w postaci modu³u jest bardzo
-zalecane. Skrypty s± przygotowane do tego by zainstalowaæ i zmodyfikowaæ
-odpowiednie pliki systemowe w stopniu w jakim jest to konieczne.
+IP Filter to filtr pakietów TCP/IP, przeznaczony do u¿ycia w
+¶rodowiskach typu firewall. By móc go u¿ywaæ musi istnieæ wsparcie
+przez odpowiedni modu³ ³adowalny lub w³±czone w j±dro; u¿ycie w
+postaci modu³u jest bardzo zalecane. Skrypty s± przygotowane do tego
+by zainstalowaæ i zmodyfikowaæ odpowiednie pliki systemowe w stopniu w
+jakim jest to konieczne.
 
 %prep
 %setup -q -n ip_fil%{version}
@@ -35,7 +35,7 @@ odpowiednie pliki systemowe w stopniu w jakim jest to konieczne.
 
 %build
 ./configure --prefix=%{_prefix}
-%{__make} RPM_OPT_FLAGS="$RPM_OPT_FLAGS"
+%{__make} RPM_OPT_FLAGS="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
