@@ -10,7 +10,7 @@ Source0:	ftp://coombs.anu.edu.au/pub/net/ip-filter/ip-fil3.3.12.tar.gz
 #Patch0:		
 #BuildRequires:	
 #Requires:	
-Buildroot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define	_prefix	/usr
 
@@ -32,7 +32,6 @@ required.
 #Group(pl):	
 
 #%description 
-
 
 #%description -l pl
 # end of optional package ==============
@@ -70,7 +69,13 @@ rm -rf $RPM_BUILD_ROOT
 All persons listed below can be reached at <cvs_login>@pld.org.pl
 
 $Log: ip-filter.spec,v $
-Revision 1.2  2000-03-28 16:54:34  baggins
+Revision 1.3  2000-04-01 11:14:46  zagrodzki
+- changed all BuildRoot definitons
+- removed all applnkdir defs
+- changed some prereqs/requires
+- removed duplicate empty lines
+
+Revision 1.2  2000/03/28 16:54:34  baggins
 - translated kloczkish into english
 
 Revision 1.1  2000/03/16 08:32:27  cieciwa
