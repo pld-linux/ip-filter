@@ -5,8 +5,6 @@ Version:	3.3.12
 Release:	1
 License:	GPL
 Group:		Applications/System
-Group(de):	Applikationen/System
-Group(pl):	Aplikacje/System
 Source0:	ftp://coombs.anu.edu.au/pub/net/ip-filter/ip-fil%{version}.tar.gz
 #Patch0:	
 #BuildRequires:	
