@@ -24,7 +24,7 @@ and patch system files, as required.
 %description -l pl
 
 %prep
-%setup -q
+%setup -q -n ip_fil%{version}
 
 #%patch
 
