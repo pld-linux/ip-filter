@@ -22,6 +22,11 @@ where possible is highly recommended. Scripts are provided to install
 and patch system files, as required.
 
 %description -l pl
+IP Filter to filtr pakietów TCP/IP, przeznaczony do u¿ycia w ¶rodowiskach
+typu firewall. By móc go u¿ywaæ musi istnieæ wsparcie przez odpowiedni
+modu³ ³adowalny lub w³±czone w j±dro; u¿ycie w postaci modu³u jest bardzo
+zalecane. Skrypty s± przygotowane do tego by zainstalowaæ i zmodyfikowaæ
+odpowiednie pliki systemowe w stopniu w jakim jest to konieczne.
 
 %prep
 %setup -q -n ip_fil%{version}
