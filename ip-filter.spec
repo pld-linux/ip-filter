@@ -6,9 +6,9 @@ Release:	1
 License:	GPL
 Group:		Applications/System
 Source0:	ftp://coombs.anu.edu.au/pub/net/ip-filter/ip-fil%{version}.tar.gz
-#Patch0:	
-#BuildRequires:	
-#Requires:	
+#Patch0:
+#BuildRequires:
+#Requires:
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
