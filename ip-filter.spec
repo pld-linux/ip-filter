@@ -1,5 +1,5 @@
 Summary:	IP Filter
-Summary(pl):	Filtr IP
+Summary(pl.UTF-8):   Filtr IP
 Name:		ip-filter
 Version:	3.3.12
 Release:	1
@@ -20,12 +20,12 @@ or incorporated into your UNIX kernel; use as a loadable kernel module
 where possible is highly recommended. Scripts are provided to install
 and patch system files, as required.
 
-%description -l pl
-IP Filter to filtr pakietów TCP/IP, przeznaczony do u¿ycia w
-¶rodowiskach typu firewall. By móc go u¿ywaæ musi istnieæ wsparcie
-przez odpowiedni modu³ ³adowalny lub w³±czone w j±dro; u¿ycie w
-postaci modu³u jest bardzo zalecane. Skrypty s± przygotowane do tego
-by zainstalowaæ i zmodyfikowaæ odpowiednie pliki systemowe w stopniu w
+%description -l pl.UTF-8
+IP Filter to filtr pakietÃ³w TCP/IP, przeznaczony do uÅ¼ycia w
+Å›rodowiskach typu firewall. By mÃ³c go uÅ¼ywaÄ‡ musi istnieÄ‡ wsparcie
+przez odpowiedni moduÅ‚ Å‚adowalny lub wÅ‚Ä…czone w jÄ…dro; uÅ¼ycie w
+postaci moduÅ‚u jest bardzo zalecane. Skrypty sÄ… przygotowane do tego
+by zainstalowaÄ‡ i zmodyfikowaÄ‡ odpowiednie pliki systemowe w stopniu w
 jakim jest to konieczne.
 
 %prep
