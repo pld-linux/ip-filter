@@ -1,5 +1,5 @@
 Summary:	IP Filter
-Summary(pl.UTF-8):   Filtr IP
+Summary(pl.UTF-8):	Filtr IP
 Name:		ip-filter
 Version:	3.3.12
 Release:	1
