@@ -31,7 +31,7 @@ jakim jest to konieczne.
 %prep
 %setup -q -n ip_fil%{version}
 
-#%patch
+#%%patch
 
 %build
 ./configure --prefix=%{_prefix}
